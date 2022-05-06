@@ -11,6 +11,10 @@ const RotatingLines = styled.div`
 
 export const Loader = () => {
     return (
-        <RotatingLines />
+        <div className="App">
+            <header className="App-header">
+                <RotatingLines />
+            </header>
+        </div>
     )
 }

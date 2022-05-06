@@ -19,10 +19,14 @@ function App() {
     }, 2500)
   })
 
+  if (isLoading == true) return <Loader />;
+
   return (
     <div className="App">
-      {isLoading == true ? <Loader /> : <div>Hello World 1</div>}
-      {loading == true ? <SpinnerDH /> : <div>Hello World 2</div>}
+      <header className="App-header">
+        <div>Hello World 1</div>
+        {/* {loading == true ? <SpinnerDH /> : <div>Hello World 2</div>} */}
+      </header>
     </div>
   );
 }
