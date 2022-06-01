@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useFetchAPI, useFetchAsyncApi } from "../../hooks/basicHooks";
 
 // fetch
 // Version 1 
@@ -9,6 +10,11 @@ import React from "react";
 
 // Component zum Fetchen
 const FetchComponent = () => {
+    // const [name, setName] = useFetchAPI()
+
+    const [characters, setCharacters] = useFetchAsyncApi("https://rickandmortyapi.com/api/character")
+
+    console.log(characters)
 
     return (
         <>

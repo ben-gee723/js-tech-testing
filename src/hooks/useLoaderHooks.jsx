@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Loader } from '../components/loaders/Loader';
 // 
 
-export function useSimpleLoader(picture, timeout) {
+export function useSimpleLoader(loader, timeout = 2500) {
     // 1. react-loader-spinner
     const [isLoading, setIsLoading] = useState(true);
 
@@ -11,7 +11,7 @@ export function useSimpleLoader(picture, timeout) {
         setTimeout(() => {
             setIsLoading(false)
             setLoading(false)
-        }, 2500)
+        }, timeout)
     })
 
     const Loader = <></>
