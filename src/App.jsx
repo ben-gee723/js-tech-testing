@@ -10,14 +10,14 @@ import { Loader } from './components/loaders/Loader'
 // import { SpinnerDH } from './components/loaders/SpinnersDH';
 import FetchComponent from './components/basics/FetchComponent'
 
-import Home from './seiten/Home';
-import About from './seiten/About';
-import Contact from './seiten/Contact';
+import Home from './router/Home';
+import About from './router/About';
+import Contact from './router/Contact';
 
-import BilderNav from './seiten/bilder/BilderNav'
-import Mer from './seiten/bilder/Mer'
-import Waelde from './seiten/bilder/Waelde'
-import Himmel from './seiten/bilder/Himmel'
+import BilderNav from './router/bilder/BilderNav'
+import Mer from './router/bilder/Mer'
+import Waelde from './router/bilder/Waelde'
+import Himmel from './router/bilder/Himmel'
 
 
 function App() {
